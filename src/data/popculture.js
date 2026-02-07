@@ -1,0 +1,92 @@
+export const popculture = {
+  movies: [
+    { id: 'm1', question: "What is the highest-grossing film of all time (unadjusted for inflation)?", answer: "Avatar (2009)", context: "$2.9 billion worldwide" },
+    { id: 'm2', question: "Which actor played Iron Man in the Marvel Cinematic Universe?", answer: "Robert Downey Jr.", context: "The role that saved his career" },
+    { id: 'm3', question: "What is the name of the coffee shop in Friends?", answer: "Central Perk", context: "Where the gang always hung out" },
+    { id: 'm4', question: "Who directed the movie 'Inception'?", answer: "Christopher Nolan", context: "Master of mind-bending films" },
+    { id: 'm5', question: "What is the name of the kingdom in Frozen?", answer: "Arendelle", context: "Elsa and Anna's home" },
+    { id: 'm6', question: "Which movie features the quote 'I see dead people'?", answer: "The Sixth Sense", context: "1999 M. Night Shyamalan film" },
+    { id: 'm7', question: "What is the longest-running film franchise?", answer: "James Bond (or Godzilla)", context: "Bond started 1962, Godzilla 1954" },
+    { id: 'm8', question: "Which actress played Katniss Everdeen in The Hunger Games?", answer: "Jennifer Lawrence", context: "Made her a global superstar" },
+    { id: 'm9', question: "What is the name of the hobbit played by Elijah Wood in LOTR?", answer: "Frodo Baggins", context: "Ring-bearer on the quest to Mordor" },
+    { id: 'm10', question: "Which movie won the first Oscar for Best Picture?", answer: "Wings (1927)", context: "Silent film about WWI pilots" },
+    { id: 'm11', question: "What is the name of the villain in The Lion King?", answer: "Scar", context: "Mufasa's brother who killed him" },
+    { id: 'm12', question: "Which Quentin Tarantino movie features the ' Royale with Cheese' conversation?", answer: "Pulp Fiction", context: "Vincent and Jules discussing European fast food" },
+    { id: 'm13', question: "What is the name of the AI in 2001: A Space Odyssey?", answer: "HAL 9000", context: "'I'm sorry, Dave. I'm afraid I can't do that.'" },
+    { id: 'm14', question: "Which actor has won the most Oscars for Best Actor?", answer: "Daniel Day-Lewis (3)", context: "Or Katharine Hepburn has 4 for Best Actress" },
+    { id: 'm15', question: "What year did Barbie and Oppenheimer release (Barbenheimer)?", answer: "2023", context: "July 21, 2023 - internet phenomenon!" }
+  ],
+  tvshows: [
+    { id: 'tv1', question: "What is the name of the prison in Orange Is the New Black?", answer: "Litchfield Penitentiary", context: "Based on Piper Kerman's memoir" },
+    { id: 'tv2', question: "Which show features Eleven, Dustin, and the Upside Down?", answer: "Stranger Things", context: "Netflix sci-fi horror phenomenon" },
+    { id: 'tv3', question: "What is the name of the dragon queen in Game of Thrones?", answer: "Daenerys Targaryen", context: "Mother of Dragons, Breaker of Chains" },
+    { id: 'tv4', question: "Which British baking show features Paul Hollywood?", answer: "The Great British Bake Off", context: "Famous for his handshake" },
+    { id: 'tv5', question: "What is the name of the fictional paper company in The Office (US)?", answer: "Dunder Mifflin", context: "Scranton branch, led by Michael Scott" },
+    { id: 'tv6', question: "Which show has the catchphrase 'Winter is Coming'?", answer: "Game of Thrones", context: "House Stark's words" },
+    { id: 'tv7', question: "What year did Breaking Bad premiere?", answer: "2008", context: "Created by Vince Gilligan" },
+    { id: 'tv8', question: "Who plays Ted Lasso?", answer: "Jason Sudeikis", context: "Optimistic American football coach in England" },
+    { id: 'tv9', question: "What is the name of the AI assistant in Black Mirror's 'White Christmas'?", answer: "Cookie", context: "Digital copy of a person's consciousness" },
+    { id: 'tv10', question: "Which reality show features the phrase 'You're fired'?", answer: "The Apprentice (UK and US)", context: "Donald Trump/Alan Sugar's catchphrase" },
+    { id: 'tv11', question: "What is the name of the high school in Euphoria?", answer: "East Highland High School", context: "Zendaya plays Rue" },
+    { id: 'tv12', question: "Which show is set in the fictional town of Hawkins, Indiana?", answer: "Stranger Things", context: "1980s nostalgia heaven" },
+    { id: 'tv13', question: "What is the name of the speakeasy in Peaky Blinders?", answer: "The Garrison", context: "Shelby family territory" },
+    { id: 'tv14', question: "Which animated show features Rick and Morty going on interdimensional adventures?", answer: "Rick and Morty", context: "Wubba lubba dub dub!" },
+    { id: 'tv15', question: "What is the name of the hotel in The White Lotus?", answer: "The White Lotus (resort chain)", context: "Season 1 in Hawaii, Season 2 in Sicily" }
+  ],
+  celebrities: [
+    { id: 'c1', question: "Which celebrity couple was known as 'Brangelina'?", answer: "Brad Pitt and Angelina Jolie", context: "Together 2005-2016, married 2014-2016" },
+    { id: 'c2', question: "Who is the most-followed person on Instagram?", answer: "Cristiano Ronaldo (or Selena Gomez/Swift among celebrities)", context: "Over 600 million followers" },
+    { id: 'c3', question: "Which Kardashian sister is the oldest?", answer: "Kourtney Kardashian", context: "Born 1979" },
+    { id: 'c4', question: "Which singer was known as the 'King of Pop'?", answer: "Michael Jackson", context: "Thriller, Billie Jean, Beat It..." },
+    { id: 'c5', question: "Who played Jack Dawson in Titanic?", answer: "Leonardo DiCaprio", context: "His breakthrough heartthrob role" },
+    { id: 'c6', question: "Which actress is married to Ryan Reynolds?", answer: "Blake Lively", context: "Married since 2012, troll each other online" },
+    { id: 'c7', question: "Which British royal married Meghan Markle?", answer: "Prince Harry", context: "Wedding was May 19, 2018" },
+    { id: 'c8', question: "Who is known as the 'Queen of Christmas'?", answer: "Mariah Carey", context: "'All I Want for Christmas Is You' dominates every year" },
+    { id: 'c9', question: "Which YouTuber has the most subscribers?", answer: "MrBeast (Jimmy Donaldson)", context: "Over 250 million subscribers" },
+    { id: 'c10', question: "Which actor plays Deadpool?", answer: "Ryan Reynolds", context: "Also produces the films" },
+    { id: 'c11', question: "Who is Taylor Swift's current NFL boyfriend?", answer: "Travis Kelce", context: "Kansas City Chiefs tight end" },
+    { id: 'c12', question: "Which celebrity chef is known for yelling 'Idiot Sandwich'?", answer: "Gordon Ramsay", context: "Hell's Kitchen, Kitchen Nightmares fame" }
+  ],
+  trends: [
+    { id: 't1', question: "What dance craze went viral on TikTok in 2020?", answer: "The Renegade (or Savage Love, Blinding Lights, etc.)", context: "Charli D'Amelio made it famous" },
+    { id: 't2', question: "What was the 'Ice Bucket Challenge' raising awareness for?", answer: "ALS (Amyotrophic Lateral Sclerosis)", context: "Raised $220 million in 2014" },
+    { id: 't3', question: "What does 'IYKYK' stand for?", answer: "If You Know, You Know", context: "Gen Z/millennial slang" },
+    { id: 't4', question: "What app was banned in the US in 2025 (briefly)?", answer: "TikTok", context: "Then restored within 24 hours" },
+    { id: 't5', question: "What does 'rizz' mean in Gen Z slang?", answer: "Charisma/ability to attract someone", context: "From 'charisma' - short for 'rizz-matic'" },
+    { id: 't6', question: "What was the 'Woman in Gold' actually called?", answer: "Portrait of Adele Bloch-Bauer I", context: "Klimt painting - not really a trend but close enough!" },
+    { id: 't7', question: "What color dress went viral in 2015 - blue/black or white/gold?", answer: "Both - it was an optical illusion!", context: "Divided the internet" },
+    { id: 't8', question: "What does 'quiet quitting' mean?", answer: "Doing only your job description, no extra", context: "Workplace trend from 2022" },
+    { id: 't9', question: "What was the 'Bird Box Challenge'?", answer: "Doing things blindfolded like the movie", context: "Netflix had to warn people not to do it!" },
+    { id: 't10', question: "What does 'cheugy' mean?", context: "Out of date, trying too hard, not cool", answer: "Millennial things that are now uncool" },
+    { id: 't11', question: "What is 'doomscrolling'?", answer: "Endlessly scrolling through bad news", context: "Especially during COVID/pandemic" },
+    { id: 't12', question: "What was the 'In My Feelings Challenge' / Kiki Challenge?", answer: "Dancing alongside a moving car to Drake's song", context: "Dangerous but viral in 2018" }
+  ],
+  quotes: [
+    { id: 'q1', question: "'I'm the king of the world!' - which movie?", answer: "Titanic", context: "Jack Dawson on the bow of the ship" },
+    { id: 'q2', question: "'Why so serious?' - which character?", answer: "The Joker (Heath Ledger)", context: "The Dark Knight, 2008" },
+    { id: 'q3', question: "'May the Force be with you' - which franchise?", answer: "Star Wars", context: "Universal blessing in the galaxy far, far away" },
+    { id: 'q4', question: "'I am inevitable' - which villain?", answer: "Thanos", context: "Avengers: Endgame" },
+    { id: 'q5', question: "'You know nothing, Jon Snow' - who said it?", answer: "Ygritte", context: "Game of Thrones - wildling who loved Jon" },
+    { id: 'q6', question: "'On Wednesdays we wear pink' - which movie?", answer: "Mean Girls", context: "Plastics rules" },
+    { id: 'q7', question: "'I drink and I know things' - which character?", answer: "Tyrion Lannister", context: "Game of Thrones" },
+    { id: 'q8', question: "'To infinity and beyond!' - which character?", answer: "Buzz Lightyear", context: "Toy Story" },
+    { id: 'q9', question: "'I am your father' - who said it (full quote)?", answer: "Darth Vader", context: "Empire Strikes Back - NOT Luke, I am your father" },
+    { id: 'q10', question: "'That's what she said' - which TV show made it iconic?", answer: "The Office (US)", context: "Michael Scott's catchphrase" },
+    { id: 'q11', question: "'How you doin'?' - which character?", answer: "Joey Tribbiani", context: "Friends - Matt LeBlanc's character" },
+    { id: 'q12', question: "'I volunteer as tribute!' - which movie/character?", answer: "The Hunger Games / Katniss Everdeen", context: "Saving her sister Prim" }
+  ],
+  finishTheTitle: [
+    { id: 'ft1', question: "Harry Potter and the...", answer: "Philosopher's Stone / Chamber of Secrets / Prisoner of Azkaban / Goblet of Fire / Order of the Phoenix / Half-Blood Prince / Deathly Hallows", context: "Name any one!" },
+    { id: 'ft2', question: "Pirates of the Caribbean: The Curse of the...", answer: "Black Pearl", context: "First movie, Johnny Depp as Jack Sparrow" },
+    { id: 'ft3', question: "The Lord of the Rings: The Fellowship of the...", answer: "Ring", context: "First LOTR movie (2001)" },
+    { id: 'ft4', question: "Star Wars: The Empire...", answer: "Strikes Back", context: "Episode V, considered the best" },
+    { id: 'ft5', question: "The Chronicles of...", answer: "Narnia", context: "C.S. Lewis book/movie series" },
+    { id: 'ft6', question: "Breaking...", answer: "Bad", context: "Walter White's descent" },
+    { id: 'ft7', question: "Stranger...", answer: "Things", context: "Netflix sci-fi phenomenon" },
+    { id: 'ft8', question: "The Silence of the...", answer: "Lambs", context: "Hannibal Lecter classic" },
+    { id: 'ft9', question: "Gone...", answer: "Girl", context: "Or 'Gone with the Wind' - both work!" },
+    { id: 'ft10', question: "La La...", answer: "Land", context: "Emma Stone and Ryan Gosling musical" }
+  ]
+}
+
+export default popculture

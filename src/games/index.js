@@ -1,0 +1,6 @@
+export { default as MainMenu } from './MainMenu'
+export { default as MemeGame } from './MemeGame'
+export { default as QuizGame } from './QuizGame'
+export { default as ZoomedGame } from './ZoomedGame'
+export { default as LogoGame } from './LogoGame'
+export { default as PriceGame } from './PriceGame'

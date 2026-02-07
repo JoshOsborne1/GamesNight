@@ -1,0 +1,102 @@
+export const british = {
+  slang: [
+    { id: 'bs1', question: "What does 'chuffed' mean?", answer: "Very pleased/proud", example: "I'm absolutely chuffed with my exam results!" },
+    { id: 'bs2', question: "What does 'knackered' mean?", answer: "Extremely tired/exhausted", example: "After that 12-hour shift, I'm knackered" },
+    { id: 'bs3', question: "What is a 'cuppa'?", answer: "A cup of tea", example: "Fancy a cuppa?" },
+    { id: 'bs4', question: "What does 'gutted' mean?", answer: "Very disappointed/upset", example: "I'm gutted I missed the gig" },
+    { id: 'bs5', question: "What does 'skint' mean?", answer: "Having no money/broke", example: "Can't come out tonight, I'm skint" },
+    { id: 'bs6', question: "What is a 'bloke'?", answer: "A man/guy", example: "He's a nice bloke" },
+    { id: 'bs7', question: "What does 'dodgy' mean?", answer: "Suspicious/untrustworthy/of poor quality", example: "That kebab shop looks dodgy" },
+    { id: 'bs8', question: "What does 'taking the piss' mean?", answer: "Mocking someone / being unreasonable", example: "£10 for a pint? Are they taking the piss?" },
+    { id: 'bs9', question: "What is a 'natter'?", answer: "A chat/conversation", example: "Let's have a natter over coffee" },
+    { id: 'bs10', question: "What does 'pissed' mean in British English?", answer: "Drunk (not angry - that's American!)", example: "He got absolutely pissed at the pub" },
+    { id: 'bs11', question: "What does 'bollocks' mean?", answer: "Nonsense / testicles (depending on context)", example: "That's absolute bollocks!" },
+    { id: 'bs12', question: "What is a 'bender'?", answer: "A period of heavy drinking / partying", example: "Went on a three-day bender in Magaluf" }
+  ],
+  foodAndDrink: [
+    { id: 'fd1', question: "What is a 'Full English' breakfast missing if it has no black pudding?", answer: "It's still a Full English, just without the blood sausage!", context: "Traditional English breakfast" },
+    { id: 'fd2', question: "Which city is famous for its 'Curry Mile'?", answer: "Manchester (Rusholme)", context: "Wilmslow Road has dozens of curry houses" },
+    { id: 'fd3', question: "What are 'bangers'?", answer: "Sausages", context: "Bangers and mash = sausages and mashed potato" },
+    { id: 'fd4', question: "What is a 'biscuit' in the UK?", answer: "A cookie/cracker (sweet or savory)", context: "NOT what Americans call a biscuit!" },
+    { id: 'fd5', question: "What is the most popular pub name in Britain?", answer: "The Red Lion", context: "There are over 600 of them!" },
+    { id: 'fd6', question: "What is 'mushy peas'?", answer: "Marrowfat peas soaked and boiled into a mush", context: "Classic fish and chip shop side" },
+    { id: 'fd7', question: "Which soft drink is described as 'Scotland's other national drink'?", answer: "Irn-Bru", context: "Bright orange, unique flavor" },
+    { id: 'fd8', question: "What is a 'kebab' traditionally served in after a night out?", answer: "Pitta bread", context: "Doner kebab - late night staple" },
+    { id: 'fd9', question: "What is 'spotted dick'?", answer: "A steamed suet pudding with dried fruit", context: "Classic British dessert" },
+    { id: 'fd10', question: "Which British city has the most Michelin stars?", answer: "London", context: "Over 70 Michelin-starred restaurants" },
+    { id: 'fd11', question: "What is a 'pasty' (Cornish pasty)?", answer: "Savory pastry filled with meat and vegetables", context: "Protected status - must be made in Cornwall!" },
+    { id: 'fd12', question: "What is ' Builders Tea'?", answer: "Strong, milky tea", context: "The working person's brew" }
+  ],
+  places: [
+    { id: 'pl1', question: "What is the largest lake in the UK?", answer: "Lough Neagh (Northern Ireland)", context: "Or Loch Lomond if counting Scotland only" },
+    { id: 'pl2', question: "Which UK city has the nickname 'The Toon'?", answer: "Newcastle", context: "From 'town' in Geordie accent" },
+    { id: 'pl3', question: "What is the southernmost point of mainland UK?", answer: "Lizard Point (Cornwall)", context: "Not Land's End!" },
+    { id: 'pl4', question: "Which city is known as the 'Second City' of the UK?", answer: "Birmingham", context: "By population - Manchester claims it culturally" },
+    { id: 'pl5', question: "What is the oldest university in the UK?", answer: "University of Oxford", context: "Teaching since 1096" },
+    { id: 'pl6', question: "Which London Underground line is colored red on the map?", answer: "Central Line", context: "Busiest line on the network" },
+    { id: 'pl7', question: "What is the tallest building in the UK?", answer: "The Shard (310m)", context: "London Bridge area" },
+    { id: 'pl8', question: "Which UK island is known as 'Rock' for its celebrity visitors?", answer: "Rock, Cornwall", context: "Across from Padstow" },
+    { id: 'pl9', question: "What is the only UK city with an underground metro?", answer: "London (Tube)", context: "Glasgow has a subway, but not 'underground'" },
+    { id: 'pl10', question: "Which county is known as 'The Garden of England'?", answer: "Kent", context: "Famous for orchards and hop gardens" },
+    { id: 'pl11', question: "What is the postcode for Buckingham Palace?", answer: "SW1A 1AA", context: "Probably the most famous postcode!" },
+    { id: 'pl12', question: "Which UK beach was voted best in Europe in 2019?", answer: "Rhossili Bay, Wales", context: "Gower Peninsula, Swansea" }
+  ],
+  telly: [
+    { id: 't1', question: "What is the longest-running soap opera in the UK?", answer: "Coronation Street", context: "First broadcast December 9, 1960" },
+    { id: 't2', question: "Who is the current host of The Great British Bake Off?", answer: "Noel Fielding & Alison Hammond", context: "With Paul & Prue judging" },
+    { id: 't3', question: "What does 'GBBO' stand for?", answer: "Great British Bake Off", context: "Popular baking competition" },
+    { id: 't4', question: "Which reality show features 'I'm a Celebrity... Get Me Out of Here!'?", answer: "I'm a Celebrity... Get Me Out of Here!", context: "Australian jungle, eating bugs" },
+    { id: 't5', question: "Who is the 'Dragon' known for saying 'I'm out'?", answer: "Any of the Dragons, but especially Duncan Bannatyne", context: "Dragons' Den catchphrase" },
+    { id: 't6', question: "What is the prize for winning Love Island?", answer: "£50,000 (split or stolen)", context: "And hopefully love!" },
+    { id: 't7', question: "Which UK comedy series features David Brent?", answer: "The Office", context: "Created by Ricky Gervais & Stephen Merchant" },
+    { id: 't8', question: "What is the theme tune to Match of the Day?", answer: "Match of the Day theme (no lyrics)", context: "Iconic football highlights show" },
+    { id: 't9', question: "Who narrates Love Island?", answer: "Iain Stirling", context: "Scottish comedian, very sarcastic" },
+    { id: 't10', question: "What time is the Queen's Speech on Christmas Day?", answer: "3:00 PM", context: "Tradition since 1932" },
+    { id: 't11', question: "Which Channel 4 show features people watching TV on TV?", answer: "Gogglebox", context: "Meta television at its finest" },
+    { id: 't12', question: "What is the name of the pub in EastEnders?", answer: "The Queen Victoria (The Queen Vic)", context: "Albert Square's local" }
+  ],
+  royal: [
+    { id: 'r1', question: "What is King Charles III's full name?", answer: "Charles Philip Arthur George", context: "Could have been King George VII, Philip, or Arthur" },
+    { id: 'r2', question: "Where was Prince Harry married?", answer: "St George's Chapel, Windsor Castle", context: "May 19, 2018" },
+    { id: 'r3', question: "What are the Queen's Guards' famous hats called?", answer: "Bearskins", context: "Made from Canadian bear fur" },
+    { id: 'r4', question: "What is the Royal Family's surname?", answer: "Mountbatten-Windsor (or just Windsor)", context: "Changed from Saxe-Coburg and Gotha" },
+    { id: 'r5', question: "Which palace is the monarch's official London residence?", answer: "Buckingham Palace", context: "Also has Windsor, Balmoral, Sandringham..." },
+    { id: 'r6', question: "What is Kate Middleton's title?", answer: "Catherine, Princess of Wales", context: "Previously Duchess of Cambridge" },
+    { id: 'r7', question: "Which King had six wives?", answer: "Henry VIII", context: "Divorced, beheaded, died, divorced, beheaded, survived" },
+    { id: 'r8', question: "What is the Tower of London famous for housing?", answer: "The Crown Jewels (and ravens)", context: "Also used as a prison historically" },
+    { id: 'r9', question: "Which royal founded the Duke of Edinburgh Award?", answer: "Prince Philip", context: "For young people's development" },
+    { id: 'r10', question: "What is the name of the Queen's favourite dog breed?", answer: "Corgis", context: "Elizabeth II had over 30 corgis in her lifetime" },
+    { id: 'r11', question: "Where is the Stone of Destiny used in coronations?", answer: "Westminster Abbey", context: "Ancient Scottish coronation stone" },
+    { id: 'r12', question: "What does 'HRH' stand for?", answer: "His/Her Royal Highness", context: "Title for senior royals" }
+  ],
+  sport: [
+    { id: 'sp1', question: "Which English football club has won the most Champions League titles?", answer: "Liverpool (6)", context: "Manchester United has 3" },
+    { id: 'sp2', question: "What is the home of cricket?", answer: "Lord's Cricket Ground", context: "In St John's Wood, London" },
+    { id: 'sp3', question: "Which tennis tournament is held at Wimbledon?", answer: "The Championships, Wimbledon", context: "Only Grand Slam on grass" },
+    { id: 'sp4', question: "What is the Oxford vs Cambridge boat race called?", answer: "The Boat Race", context: "On the River Thames since 1829" },
+    { id: 'sp5', question: "Which UK city hosted the 2012 Olympics?", answer: "London", context: "Third time hosting (1908, 1948, 2012)" },
+    { id: 'sp6', question: "What sport is played at Twickenham Stadium?", answer: "Rugby union", context: "England's national rugby stadium" },
+    { id: 'sp7', question: "Which football club is known as 'The Red Devils'?", answer: "Manchester United", context: "Busby Babes evolution" },
+    { id: 'sp8', question: "What is the nickname of the England rugby team?", answer: "The Red Roses", context: "Women's team - men's is just 'England'" },
+    { id: 'sp9', question: "Which horse race is known as 'The Greatest Show on Turf'?", answer: "The Grand National", context: "Aintree Racecourse, Liverpool" },
+    { id: 'sp10', question: "What is a 'hat-trick' in football?", answer: "Three goals by one player in one match", context: "Fans throw hats onto the pitch traditionally" },
+    { id: 'sp11', question: "Which UK footballer is married to Victoria Beckham?", answer: "David Beckham", context: "Posh and Becks since 1999" },
+    { id: 'sp12', question: "What is the Calcutta Cup contested in?", answer: "Rugby Union (England vs Scotland)", context: "Six Nations trophy" }
+  ],
+  history: [
+    { id: 'h1', question: "Which king was beheaded during the English Civil War?", answer: "Charles I", context: "1649, only English king to be executed" },
+    { id: 'h2', question: "What year did the UK join the EU (then EEC)?", answer: "1973", context: "Left in 2020 after the Brexit vote" },
+    { id: 'h3', question: "Which British ship sank on its maiden voyage in 1912?", answer: "Titanic", context: "Built in Belfast, sailed from Southampton" },
+    { id: 'h4', question: "Who was the Prime Minister during WWII?", answer: "Winston Churchill", context: "'We shall never surrender'" },
+    { id: 'h5', question: "What was the 'Swinging London' era?", answer: "The 1960s cultural revolution", context: "Fashion, music, youth culture explosion" },
+    { id: 'h6', question: "Which plague hit London in 1665?", answer: "The Great Plague (bubonic)", context: "Killed about 100,000 people" },
+    { id: 'h7', question: "What was the name of the ship that brought the Pilgrims to America?", answer: "The Mayflower", context: "Sailed from Plymouth in 1620" },
+    { id: 'h8', question: "Which British scientist discovered gravity?", answer: "Isaac Newton", context: "Allegedly inspired by a falling apple" },
+    { id: 'h9', question: "What was the 'Blitz'?", answer: "German bombing campaign against UK in WWII", context: "September 1940 - May 1941" },
+    { id: 'h10', question: "Which queen ruled for 63 years during the Victorian era?", answer: "Queen Victoria", context: "1837-1901, longest reign until Elizabeth II" },
+    { id: 'h11', question: "What was the Magna Carta?", answer: "Charter of rights agreed by King John in 1215", context: "Limited royal power, foundation of law" },
+    { id: 'h12', question: "Who was the first female Prime Minister of the UK?", answer: "Margaret Thatcher", context: "1979-1990, 'Iron Lady'" }
+  ]
+}
+
+export default british
