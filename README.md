@@ -428,6 +428,153 @@ audioController.setVolume(0.5)
 
 ---
 
+## 🚀 Deployment
+
+Game Night Controller consists of two parts:
+1. **Static Frontend** - The React app (Vite build)
+2. **WebSocket Server** - For cross-device synchronization
+
+### Architecture Overview
+
+```
+┌─────────────┐         ┌──────────────────┐
+│  TV Display │◄───────►│  WebSocket       │
+│  (Browser)  │   WS    │  Server :3001    │
+└─────────────┘         └────────┬─────────┘
+                                 │
+┌─────────────┐                  │
+│  Host Phone │◄─────────────────┘
+│  (Browser)  │        WS
+└─────────────┘
+```
+
+### Option 1: Full-Stack Deployment (Railway, Render, Heroku)
+
+Best for: Single-platform deployment with everything in one place.
+
+**Railway:**
+```bash
+# Install Railway CLI
+npm install -g @railway/cli
+
+# Login and create project
+railway login
+railway init
+
+# Deploy
+railway up
+
+# Set environment variables
+railway variables set WEBSOCKET_PORT=3001
+railway variables set VITE_WS_URL=wss://your-app.railway.app
+```
+
+**Render:**
+1. Create a new Web Service
+2. Connect your repository
+3. Set:
+   - Build Command: `npm install && npm run build`
+   - Start Command: `node server.js`
+4. Add environment variables in Render dashboard
+
+**Heroku:**
+```bash
+# Create app
+heroku create your-game-night
+
+# Set buildpack (if needed)
+heroku buildpacks:set heroku/nodejs
+
+# Deploy
+git push heroku main
+
+# Set environment variables
+heroku config:set WEBSOCKET_PORT=3001
+heroku config:set VITE_WS_URL=wss://your-game-night.herokuapp.com
+```
+
+### Option 2: Split Deployment (Vercel + Separate WS Server)
+
+Best for: Leveraging Vercel's free tier for frontend + cheap WS hosting.
+
+**Step 1: Deploy Frontend to Vercel**
+```bash
+# Install Vercel CLI
+npm install -g vercel
+
+# Deploy
+vercel
+
+# Or connect GitHub repo to Vercel dashboard for auto-deploy
+```
+
+**Step 2: Deploy WebSocket Server**
+
+Choose one of these platforms:
+
+| Platform | Free Tier | Notes |
+|----------|-----------|-------|
+| Railway | $5 credit/month | Easiest setup |
+| Render | 750 hours/month | Free tier spins down |
+| Fly.io | 3 VMs free | Good for always-on |
+| DigitalOcean | Paid only | Reliable production |
+
+Example with Railway:
+```bash
+# In server directory (or monorepo)
+railway init
+railway up
+railway variables set WEBSOCKET_PORT=3001
+```
+
+**Step 3: Configure Environment**
+
+In Vercel dashboard, set environment variable:
+```
+VITE_WS_URL=wss://your-ws-server.railway.app
+```
+
+### Environment Variables
+
+| Variable | Required | Description |
+|----------|----------|-------------|
+| `WEBSOCKET_PORT` | No | WebSocket server port (default: 3001) |
+| `VITE_WS_URL` | Yes* | WebSocket URL for client connection |
+
+*Required for production. For local dev, defaults to `ws://localhost:3001`.
+
+### WebSocket Server Requirements
+
+- Node.js 18+
+- Outbound/inbound WebSocket connections allowed
+- Port 3001 (or custom `WEBSOCKET_PORT`)
+- For HTTPS sites: WSS required (most platforms handle this automatically)
+
+### Health Check
+
+The WebSocket server provides a health endpoint:
+```bash
+curl https://your-server.com/health
+# Returns: {"status":"ok","clients":2}
+```
+
+### Troubleshooting Production Deployment
+
+**WebSocket connection fails:**
+1. Ensure `VITE_WS_URL` uses `wss://` (not `ws://`) for HTTPS sites
+2. Check firewall allows WebSocket connections
+3. Verify the server is running: `curl your-server/health`
+
+**Mixed content errors:**
+- HTTPS sites must use `wss://` URLs
+- HTTP sites can use `ws://`
+
+**CORS issues:**
+- The server accepts connections from any origin
+- If issues occur, add origin checking in `server.js`
+
+---
+
 ## 📝 License
 
 MIT License - Feel free to use for your own game nights!
