@@ -1,72 +1,104 @@
-export const history = {
-  dates: [
-    { id: 'd1', question: "In what year did World War II end?", answer: "1945", context: "The war ended with Japan's surrender in September" },
-    { id: 'd2', question: "When did the Berlin Wall fall?", answer: "1989", context: "November 9, 1989 - a pivotal moment in Cold War history" },
-    { id: 'd3', question: "In what year did Christopher Columbus reach the Americas?", answer: "1492", context: "Sailed the ocean blue..." },
-    { id: 'd4', question: "When was the Declaration of Independence signed?", answer: "1776", context: "July 4, 1776 - US Independence Day" },
-    { id: 'd5', question: "In what year did the Titanic sink?", answer: "1912", context: "April 15, 1912 - on its maiden voyage" },
-    { id: 'd6', question: "In what year did the first iPhone release?", answer: "2007", context: "June 29, 2007 - Steve Jobs changed everything" },
-    { id: 'd7', question: "When did the Chernobyl disaster occur?", answer: "1986", context: "April 26, 1986 - worst nuclear accident in history" },
-    { id: 'd8', question: "In what year did the first moon landing happen?", answer: "1969", context: "July 20, 1969 - Apollo 11" },
-    { id: 'd9', question: "When was the Great Fire of London?", answer: "1666", context: "September 2-6, 1666" },
-    { id: 'd10', question: "In what year did the French Revolution begin?", answer: "1789", context: "The Storming of the Bastille on July 14" },
-    { id: 'd11', question: "When did the first episode of Friends air?", answer: "1994", context: "September 22, 1994" },
-    { id: 'd12', question: "In what year did the UK vote for Brexit?", answer: "2016", context: "June 23, 2016 referendum" }
-  ],
-  figures: [
-    { id: 'f1', question: "Who was the first person to walk on the moon?", answer: "Neil Armstrong", context: "July 20, 1969" },
-    { id: 'f2', question: "Who was known as the 'Iron Lady'?", answer: "Margaret Thatcher", context: "UK Prime Minister from 1979-1990" },
-    { id: 'f3', question: "Who painted the Mona Lisa?", answer: "Leonardo da Vinci", context: "Italian Renaissance polymath" },
-    { id: 'f4', question: "Who wrote 'Romeo and Juliet'?", answer: "William Shakespeare", context: "The Bard of Avon" },
-    { id: 'f5', question: "Who was the first Queen of England?", answer: "Mary I", context: "Also known as Bloody Mary, reigned 1553-1558" },
-    { id: 'f6', question: "Who invented the World Wide Web?", answer: "Tim Berners-Lee", context: "Invented it at CERN in 1989" },
-    { id: 'f7', question: "Who was the first woman to win a Nobel Prize?", answer: "Marie Curie", context: "Won in Physics (1903) and Chemistry (1911)" },
-    { id: 'f8', question: "Who was the longest-reigning British monarch before Elizabeth II?", answer: "Queen Victoria", context: "63 years and 216 days" },
-    { id: 'f9', question: "Who assassinated Archduke Franz Ferdinand, starting WWI?", answer: "Gavrilo Princip", context: "June 28, 1914 in Sarajevo" },
-    { id: 'f10', question: "Who was the first Black President of the United States?", answer: "Barack Obama", context: "Served 2009-2017" },
-    { id: 'f11', question: "Who discovered penicillin?", answer: "Alexander Fleming", context: "Scottish scientist, 1928" },
-    { id: 'f12', question: "Who was the first person to reach the South Pole?", answer: "Roald Amundsen", context: "December 14, 1911 - beating Captain Scott" }
-  ],
-  battles: [
-    { id: 'b1', question: "Which battle is considered the turning point of World War II in Europe?", answer: "Battle of Stalingrad", context: "1942-1943, Soviet victory over Nazi Germany" },
-    { id: 'b2', question: "In which battle was Napoleon finally defeated?", answer: "Battle of Waterloo", context: "1815, in present-day Belgium" },
-    { id: 'b3', question: "Which famous battle took place in 1066?", answer: "Battle of Hastings", context: "Norman conquest of England" },
-    { id: 'b4', question: "Which WWI battle had over 1 million casualties?", answer: "Battle of the Somme", context: "1916, one of the bloodiest battles in history" },
-    { id: 'b5', question: "Which naval battle defeated the Spanish Armada?", answer: "Battle of Gravelines", context: "1588, English victory over Spain" },
-    { id: 'b6', question: "Which ancient battle did 300 Spartans famously fight in?", answer: "Battle of Thermopylae", context: "480 BC against the Persian Empire" },
-    { id: 'b7', question: "Which Civil War battle was the bloodiest single day in American history?", answer: "Battle of Antietam", context: "September 17, 1862 - 22,000+ casualties" },
-    { id: 'b8', question: "Which battle marked the end of the Wars of the Roses?", answer: "Battle of Bosworth Field", context: "1485 - Richard III died, Henry Tudor won" },
-    { id: 'b9', question: "Which D-Day beach was featured in 'Saving Private Ryan'?", answer: "Omaha Beach", context: "June 6, 1944 - Normandy landings" },
-    { id: 'b10', question: "Which battle ended the Napoleonic Wars for good?", answer: "Battle of Waterloo", context: "Wait, we already had that... it's that important!" }
-  ],
-  popCultureHistory: [
-    { id: 'pc1', question: "What year did the first Harry Potter book release?", answer: "1997", context: "Harry Potter and the Philosopher's Stone" },
-    { id: 'pc2', question: "When did the first iPod launch?", answer: "2001", context: "October 23, 2001 - '1,000 songs in your pocket'" },
-    { id: 'pc3', question: "What year did YouTube launch?", answer: "2005", context: "First video: 'Me at the zoo'" },
-    { id: 'pc4', question: "When did the final episode of Game of Thrones air?", answer: "2019", context: "May 19, 2019 - controversial ending!" },
-    { id: 'pc5', question: "What year was the first Toy Story movie released?", answer: "1995", context: "The first fully computer-animated feature film" },
-    { id: 'pc6', question: "When did Instagram launch?", answer: "2010", context: "October 6, 2010" },
-    { id: 'pc7', question: "What year did The Simpsons first air?", answer: "1989", context: "December 17, 1989 - 'Simpsons Roasting on an Open Fire'" },
-    { id: 'pc8', question: "When was the first episode of The Office (UK) broadcast?", answer: "2001", context: "July 9, 2001 - created by Ricky Gervais" },
-    { id: 'pc9', question: "What year did the first iPad release?", answer: "2010", context: "April 3, 2010" },
-    { id: 'pc10', question: "When did the last episode of Friends air?", answer: "2004", context: "May 6, 2004 - 52.5 million viewers" },
-    { id: 'pc11', question: "What year did Netflix start streaming (not just DVDs)?", answer: "2007", context: "January 2007" },
-    { id: 'pc12', question: "When did the first Hunger Games movie come out?", answer: "2012", context: "March 23, 2012" }
-  ],
-  famousEvents: [
-    { id: 'fe1', question: "What major event happened on September 11, 2001?", answer: "9/11 Terrorist Attacks", context: "Twin Towers and Pentagon attacked" },
-    { id: 'fe2', question: "What natural disaster struck Japan in March 2011?", answer: "Tohoku Earthquake and Tsunami", context: "Also caused Fukushima nuclear disaster" },
-    { id: 'fe3', question: "What event caused global lockdowns in 2020?", answer: "COVID-19 Pandemic", context: "WHO declared pandemic March 11, 2020" },
-    { id: 'fe4', question: "What happened at Chernobyl in 1986?", answer: "Nuclear disaster", context: "Reactor 4 exploded, worst nuclear accident" },
-    { id: 'fe5', question: "What major event united the world in July 1969?", answer: "Moon Landing", context: "Apollo 11, Neil Armstrong's first steps" },
-    { id: 'fe6', question: "What scandal brought down Richard Nixon in 1974?", answer: "Watergate", context: "Bugging of Democratic Party headquarters" },
-    { id: 'fe7', question: "What event was called 'the wedding of the century' in 1981?", answer: "Charles and Diana's wedding", context: "July 29, 1981 - 750 million viewers" },
-    { id: 'fe8', question: "What happened to the Titanic on April 14-15, 1912?", answer: "It hit an iceberg and sank", context: "Over 1,500 people died" },
-    { id: 'fe9', question: "What event caused the Great Fire of London?", answer: "A fire started in a bakery on Pudding Lane", context: "Thomas Farynor's bakery" },
-    { id: 'fe10', question: "What was the Cuban Missile Crisis?", answer: "1962 standoff between US and USSR over missiles in Cuba", context: "Closest the world came to nuclear war" },
-    { id: 'fe11', question: "What sporting event was held in London in 2012?", answer: "Summer Olympics", context: "Third time London hosted the Games" },
-    { id: 'fe12', question: "What happened at the Oscars in 2022 involving Will Smith?", answer: "He slapped Chris Rock on stage", context: "After joke about Jada Pinkett Smith" }
-  ]
-}
+// Famous Dates - "In what year did X happen?"
+export const dates = [
+  // Ancient History
+  { id: 'd1', question: "In what year was Rome founded according to legend?", answer: "753 BC", hint: "Romulus and Remus", type: 'date' },
+  { id: 'd2', question: "In what year did Julius Caesar get assassinated?", answer: "44 BC", hint: "The Ides of March", type: 'date' },
+  { id: 'd3', question: "In what year did the Roman Empire fall (Western Empire)?", answer: "476 AD", hint: "Odoacer deposed Romulus Augustulus", type: 'date' },
+  { id: 'd4', question: "In what year was the Great Pyramid of Giza completed?", answer: "2560 BC", hint: "Built for Pharaoh Khufu", type: 'date' },
+  
+  // Medieval History
+  { id: 'd5', question: "In what year did the First Crusade begin?", answer: "1096", hint: "Pope Urban II called for it", type: 'date' },
+  { id: 'd6', question: "In what year did the Magna Carta get signed?", answer: "1215", hint: "King John at Runnymede", type: 'date' },
+  { id: 'd7', question: "In what year did the Black Death reach Europe?", answer: "1347", hint: "Via trade ships from Asia", type: 'date' },
+  { id: 'd8', question: "In what year did the Byzantine Empire fall (Constantinople)?", answer: "1453", hint: "Ottoman conquest", type: 'date' },
+  
+  // Early Modern History
+  { id: 'd9', question: "In what year did Christopher Columbus reach the Americas?", answer: "1492", hint: "Sailed the ocean blue", type: 'date' },
+  { id: 'd10', question: "In what year was the Great Fire of London?", answer: "1666", hint: "Started in a bakery on Pudding Lane", type: 'date' },
+  { id: 'd11', question: "In what year did the French Revolution begin?", answer: "1789", hint: "Storming of the Bastille", type: 'date' },
+  { id: 'd12', question: "In what year was the Declaration of Independence signed?", answer: "1776", hint: "July 4th, US Independence Day", type: 'date' },
+  
+  // Modern History (19th-20th century)
+  { id: 'd13', question: "In what year did the American Civil War end?", answer: "1865", hint: "Lee surrendered at Appomattox", type: 'date' },
+  { id: 'd14', question: "In what year did the Titanic sink?", answer: "1912", hint: "On its maiden voyage", type: 'date' },
+  { id: 'd15', question: "In what year did World War I begin?", answer: "1914", hint: "Assassination of Archduke Franz Ferdinand", type: 'date' },
+  { id: 'd16', question: "In what year did World War II end?", answer: "1945", hint: "Japan surrendered in September", type: 'date' },
+  { id: 'd17', question: "In what year did the Berlin Wall fall?", answer: "1989", hint: "November 9th, pivotal Cold War moment", type: 'date' },
+  { id: 'd18', question: "In what year did the Chernobyl disaster occur?", answer: "1986", hint: "Worst nuclear accident in history", type: 'date' },
+  
+  // Recent History (Late 20th - 21st century)
+  { id: 'd19', question: "In what year did the first moon landing happen?", answer: "1969", hint: "Apollo 11, 'one small step'", type: 'date' },
+  { id: 'd20', question: "In what year did the Soviet Union collapse?", answer: "1991", hint: "End of the Cold War", type: 'date' },
+  { id: 'd21', question: "In what year did the UK vote for Brexit?", answer: "2016", hint: "June referendum", type: 'date' },
+  { id: 'd22', question: "In what year did the COVID-19 pandemic begin?", answer: "2019", hint: "First cases in Wuhan, China", type: 'date' }
+]
 
-export default history
+// Infamous Figures - Historical personalities
+export const figures = [
+  // Ancient History
+  { id: 'f1', question: "Who was the first Emperor of Rome?", answer: "Augustus", hint: "Originally named Octavian", type: 'figure' },
+  { id: 'f2', question: "Who was the Queen of Ancient Egypt known for her relationships with Julius Caesar and Mark Antony?", answer: "Cleopatra", hint: "Last active ruler of the Ptolemaic Kingdom", type: 'figure' },
+  { id: 'f3', question: "Who was the Greek conqueror who created one of the largest empires in ancient history by age 30?", answer: "Alexander the Great", hint: "Taught by Aristotle", type: 'figure' },
+  { id: 'f4', question: "Who was the Carthaginian general who crossed the Alps with elephants?", answer: "Hannibal", hint: "Enemy of Rome in the Second Punic War", type: 'figure' },
+  
+  // Medieval History
+  { id: 'f5', question: "Who was the Mongol leader who created the largest contiguous empire in history?", answer: "Genghis Khan", hint: "Founded the Mongol Empire", type: 'figure' },
+  { id: 'f6', question: "Who led the French army to several victories during the Hundred Years' War before being burned at the stake?", answer: "Joan of Arc", hint: "The Maid of Orléans", type: 'figure' },
+  { id: 'f7', question: "Who was the English king who fought Robin Hood in legend?", answer: "King John", hint: "Signed the Magna Carta", type: 'figure' },
+  { id: 'f8', question: "Who was the Holy Roman Emperor who led the Third Crusade?", answer: "Frederick Barbarossa", hint: "Also known as 'Red Beard'", type: 'figure' },
+  
+  // Early Modern / Revolutionary Figures
+  { id: 'f9', question: "Who was the French military leader who crowned himself Emperor and conquered much of Europe?", answer: "Napoleon Bonaparte", hint: "Defeated at Waterloo", type: 'figure' },
+  { id: 'f10', question: "Who was the leader of Nazi Germany?", answer: "Adolf Hitler", hint: "Führer from 1933-1945", type: 'figure' },
+  { id: 'f11', question: "Who was the Soviet leader during World War II?", answer: "Joseph Stalin", hint: "Led USSR from mid-1920s until 1953", type: 'figure' },
+  { id: 'f12', question: "Who assassinated Archduke Franz Ferdinand, starting World War I?", answer: "Gavrilo Princip", hint: "Serbian nationalist", type: 'figure' },
+  
+  // Modern Leaders & Revolutionaries
+  { id: 'f13', question: "Who was the first President of the United States?", answer: "George Washington", hint: "Father of his Country", type: 'figure' },
+  { id: 'f14', question: "Who was known as the 'Iron Lady'?", answer: "Margaret Thatcher", hint: "UK Prime Minister 1979-1990", type: 'figure' },
+  { id: 'f15', question: "Who was the South African leader who spent 27 years in prison before becoming President?", answer: "Nelson Mandela", hint: "Fought against apartheid", type: 'figure' },
+  { id: 'f16', question: "Who was the leader of the Cuban Revolution?", answer: "Fidel Castro", hint: "Ruled Cuba for nearly 50 years", type: 'figure' },
+  
+  // Scientists & Explorers
+  { id: 'f17', question: "Who was the first person to walk on the moon?", answer: "Neil Armstrong", hint: "Apollo 11, 1969", type: 'figure' },
+  { id: 'f18', question: "Who discovered penicillin?", answer: "Alexander Fleming", hint: "Scottish scientist, 1928", type: 'figure' },
+  { id: 'f19', question: "Who invented the World Wide Web?", answer: "Tim Berners-Lee", hint: "Created it at CERN in 1989", type: 'figure' },
+  { id: 'f20', question: "Who was the first woman to win a Nobel Prize?", answer: "Marie Curie", hint: "Won in Physics and Chemistry", type: 'figure' }
+]
+
+// Battles/Wars - Historical conflicts
+export const battles = [
+  // Ancient Battles
+  { id: 'b1', question: "Which ancient battle did 300 Spartans famously fight against the Persian Empire?", answer: "Battle of Thermopylae", hint: "480 BC, 'This is Sparta!'", type: 'battle' },
+  { id: 'b2', question: "Which battle ended the Roman Republic and began the Roman Empire?", answer: "Battle of Actium", hint: "31 BC, Octavian vs Antony and Cleopatra", type: 'battle' },
+  { id: 'b3', question: "Which battle was Hannibal's greatest victory over Rome?", answer: "Battle of Cannae", hint: "216 BC, famous double envelopment tactic", type: 'battle' },
+  { id: 'b4', question: "Which battle marked the end of Ptolemaic Egypt?", answer: "Battle of the Nile", hint: "47 BC, Caesar defeated Ptolemy XIII", type: 'battle' },
+  
+  // Medieval Battles
+  { id: 'b5', question: "Which famous battle in 1066 led to the Norman conquest of England?", answer: "Battle of Hastings", hint: "William the Conqueror vs Harold Godwinson", type: 'battle' },
+  { id: 'b6', question: "Which battle ended the Wars of the Roses?", answer: "Battle of Bosworth Field", hint: "1485, Richard III killed, Henry Tudor won", type: 'battle' },
+  { id: 'b7', question: "Which Crusader battle recaptured Jerusalem in 1099?", answer: "Siege of Jerusalem", hint: "First Crusade victory", type: 'battle' },
+  { id: 'b8', question: "Which 1415 battle saw English longbowmen defeat a larger French army?", answer: "Battle of Agincourt", hint: "Henry V's famous victory", type: 'battle' },
+  
+  // Early Modern Battles
+  { id: 'b9', question: "Which naval battle in 1588 defeated the Spanish Armada?", answer: "Battle of Gravelines", hint: "English victory under Elizabeth I", type: 'battle' },
+  { id: 'b10', question: "In which battle was Napoleon finally defeated?", answer: "Battle of Waterloo", hint: "1815, in present-day Belgium", type: 'battle' },
+  { id: 'b11', question: "Which Civil War battle was the bloodiest single day in American history?", answer: "Battle of Antietam", hint: "September 17, 1862, 22,000+ casualties", type: 'battle' },
+  { id: 'b12', question: "Which battle was the turning point of the American Civil War?", answer: "Battle of Gettysburg", hint: "July 1863, Lincoln's famous address followed", type: 'battle' },
+  
+  // World War I
+  { id: 'b13', question: "Which WWI battle had over 1 million casualties?", answer: "Battle of the Somme", hint: "1916, one of history's bloodiest", type: 'battle' },
+  { id: 'b14', question: "Which WWI battle was the first major tank battle in history?", answer: "Battle of Cambrai", hint: "1917, British tanks used en masse", type: 'battle' },
+  
+  // World War II
+  { id: 'b15', question: "Which battle is considered the turning point of World War II in Europe?", answer: "Battle of Stalingrad", hint: "1942-1943, Soviet victory over Nazis", type: 'battle' },
+  { id: 'b16', question: "Which naval battle was the turning point in the Pacific Theater?", answer: "Battle of Midway", hint: "June 1942, US sank 4 Japanese carriers", type: 'battle' },
+  { id: 'b17', question: "Which D-Day beach had the heaviest Allied casualties?", answer: "Omaha Beach", hint: "June 6, 1944, depicted in 'Saving Private Ryan'", type: 'battle' },
+  { id: 'b18', question: "Which battle was the largest tank battle in history?", answer: "Battle of Kursk", hint: "July 1943, Soviet Union vs Germany", type: 'battle' },
+  
+  // Cold War & Modern Conflicts
+  { id: 'b19', question: "Which 1968 surprise attacks changed US public opinion on the Vietnam War?", answer: "Tet Offensive", hint: "North Vietnamese attacked during Lunar New Year", type: 'battle' },
+  { id: 'b20', question: "Which 1982 war was fought over the Falkland Islands?", answer: "Falklands War", hint: "UK vs Argentina", type: 'battle' }
+]
+
+export default { dates, figures, battles }
